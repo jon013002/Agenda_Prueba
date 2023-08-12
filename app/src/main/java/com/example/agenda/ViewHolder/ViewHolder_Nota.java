@@ -31,14 +31,14 @@ public class ViewHolder_Nota extends RecyclerView.ViewHolder {
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mClickListener.onItemClick(view, getAdapterPosition());
+                mClickListener.onItemClick(view, getBindingAdapterPosition());
             }
         });
 
         itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                mClickListener.onItemLongClick(view, getAdapterPosition());
+                mClickListener.onItemLongClick(view, getBindingAdapterPosition());
                 return false;
             }
         });
