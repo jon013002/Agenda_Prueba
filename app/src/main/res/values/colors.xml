@@ -9,5 +9,8 @@
     <color name="colorGrayBlue">#526D82</color>
     <color name="orange">#FFA41B</color>
     <color name="orangeDark">#FF7F3F</color>
+    <color name="red">#C70039</color>
+    <color name="gold">#F2BE22</color>
+    <color name="yellow">#F7D060</color>
 </resources>
 
