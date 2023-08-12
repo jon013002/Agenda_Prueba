@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="@color/colorPrimary"
         android:padding="5dp">
 
         <!-- ID NOTA -->
@@ -21,7 +22,7 @@
             android:id="@+id/id_nota_item"
             android:text="@string/id_nota_item"
             android:visibility="gone"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:fontFamily="@font/andika"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -31,7 +32,7 @@
             android:id="@+id/uid_usuario_item"
             android:text="@string/uid_usuario_item"
             android:visibility="gone"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:fontFamily="@font/andika"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -41,7 +42,7 @@
             android:id="@+id/correo_usuario_item"
             android:text="@string/correo_usuario_item"
             android:visibility="gone"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:fontFamily="@font/andika"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -51,7 +52,7 @@
             android:id="@+id/fecha_hora_registro"
             android:text="@string/fecha_hora_registro"
             android:visibility="gone"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:fontFamily="@font/andika"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -62,7 +63,7 @@
             android:text="@string/titulo_item"
             android:textSize="25sp"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:fontFamily="@font/andika"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -72,7 +73,7 @@
             android:id="@+id/descripcion_item"
             android:text="@string/descripcion_item"
             android:textSize="18sp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:fontFamily="@font/andika"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -82,7 +83,7 @@
             android:id="@+id/fecha_item"
             android:text="@string/fecha_item"
             android:textSize="18sp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:fontFamily="@font/andika"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -93,6 +94,7 @@
             android:text="@string/estado_item"
             android:visibility="gone"
             android:fontFamily="@font/andika"
+            android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
