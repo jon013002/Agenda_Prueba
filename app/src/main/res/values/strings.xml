@@ -47,4 +47,14 @@
     <!-- MENÚ -->
     <string name="agregar_nota_BD">Agregar</string>
 
+    <!-- ITEM NOTA -->
+    <string name="id_nota_item">ID Nota</string>
+    <string name="uid_usuario_item">Uid del Usuario</string>
+    <string name="correo_usuario_item">Correo de Usuario</string>
+    <string name="fecha_hora_registro">Fecha y Hora Registro</string>
+    <string name="titulo_item">Titulo</string>
+    <string name="descripcion_item">Descripción</string>
+    <string name="fecha_item"> 00/00/0000 </string>
+    <string name="estado_item"> No finalizado</string>
+
 </resources>

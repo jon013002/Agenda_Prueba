@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:padding="0.2dp"
+    app:cardCornerRadius="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <!-- ID NOTA -->
+        <TextView
+            android:id="@+id/id_nota_item"
+            android:text="@string/id_nota_item"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:fontFamily="@font/andika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- UID USUARIO -->
+        <TextView
+            android:id="@+id/uid_usuario_item"
+            android:text="@string/uid_usuario_item"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:fontFamily="@font/andika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- CORREO USUARIO -->
+        <TextView
+            android:id="@+id/correo_usuario_item"
+            android:text="@string/correo_usuario_item"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:fontFamily="@font/andika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- FECHA_HORA_REGISTRO -->
+        <TextView
+            android:id="@+id/fecha_hora_registro"
+            android:text="@string/fecha_hora_registro"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:fontFamily="@font/andika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- TITULO DE LA NOTA -->
+        <TextView
+            android:id="@+id/titulo_item"
+            android:text="@string/titulo_item"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/andika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- DESCRIPCION -->
+        <TextView
+            android:id="@+id/descripcion_item"
+            android:text="@string/descripcion_item"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/andika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- FECHA -->
+        <TextView
+            android:id="@+id/fecha_item"
+            android:text="@string/fecha_item"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/andika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- ESTADO-->
+        <TextView
+            android:id="@+id/estado_item"
+            android:text="@string/estado_item"
+            android:visibility="gone"
+            android:fontFamily="@font/andika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>
