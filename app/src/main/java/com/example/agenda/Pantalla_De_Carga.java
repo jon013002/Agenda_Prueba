@@ -37,7 +37,7 @@ public class Pantalla_De_Carga extends AppCompatActivity {
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
 
         if(firebaseUser == null){
-            startActivity(new Intent(Pantalla_De_Carga.this, MainActivity.class));
+            startActivity(new Intent(Pantalla_De_Carga.this, Autenticar_Huella.class));
             finish();
         }else{
             startActivity(new Intent(Pantalla_De_Carga.this, MenuPrincipal.class));
