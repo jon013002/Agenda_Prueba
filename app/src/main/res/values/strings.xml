@@ -81,4 +81,7 @@
         <item>"Finalizado"</item>
     </string-array>
 
+    <!-- GOOGE -->
+    <string name="default_web_client_id">AIzaSyCfZNwR2xmx3Vyggnwntr42YZJq9w9sYaA</string>
+
 </resources>

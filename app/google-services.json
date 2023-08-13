@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "415132667173",
+    "firebase_url": "https://agenda-6711f-default-rtdb.firebaseio.com",
     "project_id": "agenda-6711f",
     "storage_bucket": "agenda-6711f.appspot.com"
   },
@@ -22,7 +23,7 @@
           }
         },
         {
-          "client_id": "415132667173-t0ui40h9fhcqpn1pfq86f5clf1kei129.apps.googleusercontent.com",
+          "client_id": "415132667173-j0jshp465jpdbos26f5tighqmpjivmhg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -35,7 +36,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "415132667173-t0ui40h9fhcqpn1pfq86f5clf1kei129.apps.googleusercontent.com",
+              "client_id": "415132667173-j0jshp465jpdbos26f5tighqmpjivmhg.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

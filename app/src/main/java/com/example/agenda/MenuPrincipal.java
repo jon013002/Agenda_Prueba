@@ -15,6 +15,11 @@ import com.example.agenda.agregarNotas.agregar_nota;
 import com.example.agenda.listaNotas.lista_notas;
 import com.example.agenda.notasArchivadas.notas_archivadas;
 import com.example.agenda.perfil.perfil_usuario;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -34,6 +39,11 @@ public class MenuPrincipal extends AppCompatActivity {
 
     DatabaseReference Usuarios;
 
+    // Google
+    private GoogleSignInClient mGoogleSignInClient;
+    private FirebaseAuth mAuth;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +62,16 @@ public class MenuPrincipal extends AppCompatActivity {
         perfil = findViewById(R.id.perfil);
         acercaDe = findViewById(R.id.acercaDe);
         cerrarSesion = findViewById(R.id.cerrarSesion);
+
+        //Google
+        mAuth = FirebaseAuth.getInstance();
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build();
+
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+        //Aqui termina Google
 
         firebaseAuth = FirebaseAuth.getInstance();
         user = firebaseAuth.getCurrentUser();
@@ -163,17 +183,31 @@ public class MenuPrincipal extends AppCompatActivity {
                     cerrarSesion.setEnabled(true);
                 }
 
+
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
+
         });
     }
 
     private void salirAplicacion() {
+        mAuth.signOut();
+        mGoogleSignInClient.signOut().addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                // Opcional: Actualizar la interfaz de usuario o mostrar un mensaje al usuario
+                Intent intent = new Intent(MenuPrincipal.this, Login.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         firebaseAuth.signOut();
+
         startActivity(new Intent(MenuPrincipal.this, MainActivity.class));
         Toast.makeText(this, "Cerraste sesión exitosamente", Toast.LENGTH_SHORT).show();
     }
