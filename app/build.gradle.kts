@@ -43,7 +43,6 @@ dependencies {
 
     implementation("com.firebaseui:firebase-ui-database:8.0.0")
 
-
     implementation("androidx.recyclerview:recyclerview:1.3.1")
 
     implementation("androidx.appcompat:appcompat:1.6.1")
