@@ -13,6 +13,10 @@
         android:theme="@style/Theme.Agenda"
         tools:targetApi="31">
         <activity
+            android:name=".ActualizarNota.actualizar_nota"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
+        <activity
             android:name=".perfil.perfil_usuario"
             android:exported="false" />
         <activity
@@ -23,8 +27,8 @@
             android:exported="false" />
         <activity
             android:name=".agregarNotas.agregar_nota"
-            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
         <activity
             android:name=".MenuPrincipal"
             android:exported="false" />

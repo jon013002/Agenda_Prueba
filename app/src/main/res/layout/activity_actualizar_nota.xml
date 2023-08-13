@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ActualizarNota.actualizar_nota">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- ID NOTA -->
+        <TextView
+            android:id="@+id/id_nota_A"
+            android:text="@string/id_nota_A"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:fontFamily="@font/andika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- UID DEL USUARIO -->
+        <TextView
+            android:id="@+id/uid_usuario_A"
+            android:hint="@string/uid_usuario_A"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:fontFamily="@font/andika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- CORREO DEL USUARIO -->
+        <TextView
+            android:id="@+id/correo_usuario_A"
+            android:hint="@string/correo_usuario_A"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:fontFamily="@font/andika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- FECHA DE REGISTRO -->
+        <TextView
+            android:id="@+id/fecha_registro_A"
+            android:hint="@string/fecha_registro_A"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:fontFamily="@font/andika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- ESTADO DE LA NOTA -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tarea_finalizada"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:background="@color/colorPrimary" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tarea_no_finalizada"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginStart="5dp"
+                android:background="#E74C3C" />
+
+            <TextView
+                android:id="@+id/estado_A"
+                android:text="@string/estado_A"
+                android:textSize="20sp"
+                android:textColor="#DC1204"
+                android:fontFamily="@font/andika"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- TITULO -->
+        <EditText
+            android:id="@+id/titulo_A"
+            android:hint="@string/titulo_A"
+            android:textColorHint="@color/black"
+            android:textColor="@color/colorGrayBlue"
+            android:backgroundTint="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/andika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- DESCRIPCIÓN -->
+        <EditText
+            android:id="@+id/descripcion_A"
+            android:hint="@string/descripcion_A"
+            android:textColorHint="@color/black"
+            android:textColor="@color/colorGrayBlue"
+            android:backgroundTint="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:minHeight="150dp"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!-- BOTÓN PARA ABRIR CALENDARIO -->
+            <Button
+                android:id="@+id/btn_calendario_A"
+                android:text="@string/btn_calendario_A"
+                app:icon="@drawable/icono_calendario"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- VISUALIZAR FECHA ELEGIDA -->
+            <TextView
+                android:id="@+id/fecha_A"
+                android:hint="@string/fecha_A"
+                android:textSize="20sp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/andika"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/black"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:id="@+id/Spinner_estado"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            
+            <TextView
+                android:id="@+id/estado_nuevo"
+                android:text="@string/estado_nuevo"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

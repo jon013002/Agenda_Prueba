@@ -46,6 +46,7 @@
 
     <!-- MENÚ -->
     <string name="agregar_nota_BD">Agregar</string>
+    <string name="actualizar_nota_BD">Actualizar</string>
 
     <!-- ITEM NOTA -->
     <string name="id_nota_item">ID Nota</string>
@@ -61,5 +62,23 @@
     <string name="elijaOpcionTXT">Elija una opción</string>
     <string name="CD_Eliminar">Eliminar</string>
     <string name="CD_Actualizar">Actualizar</string>
+
+    <!-- ACTUALIZAR NOTA -->
+    <string name="id_nota_A">ID Nota</string>
+    <string name="uid_usuario_A">Uid del Usuario</string>
+    <string name="correo_usuario_A">Correo de Usuario</string>
+    <string name="fecha_registro_A">Fecha de Registro</string>
+    <string name="titulo_A">Titulo</string>
+    <string name="descripcion_A">Descripción</string>
+    <string name="btn_calendario_A">Calendario</string>
+    <string name="fecha_A"> 00/00/0000 </string>
+    <string name="estado_A"> No finalizado</string>
+    <string name="estado_nuevo"> -- </string>
+
+    <!-- SPINNER - ESTADO -->
+    <string-array name="estados_notas">
+        <item>"No Finalizado"</item>
+        <item>"Finalizado"</item>
+    </string-array>
 
 </resources>
